@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agentic Command — ALIENDISTRICT51</title>
+<meta name="description" content="ALIENDISTRICT51 Agentic Command is a local-first operational platform: durable memory, scoped context, knowledge navigation, and permission-controlled tools and connectors including optional Gmail and Google Calendar access.">
+<link rel="canonical" href="https://aliendistrict51.space/agentic-command/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agentic Command — ALIENDISTRICT51">
+<meta property="og:description" content="A local-first operational platform with durable memory, scoped context, and permission-controlled tools and connectors.">
+<meta property="og:url" content="https://aliendistrict51.space/agentic-command/">
+<meta name="theme-color" content="#0a0b0e">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">
+      <span class="mark">AD51</span>
+      <span class="full">ALIENDISTRICT51</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">☰</label>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/agentic-command/" aria-current="page">Agentic Command</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">AD51 Product</span>
+      <h1>ALIENDISTRICT51 Agentic Command</h1>
+      <p class="lede">A local-first, agentic operating layer for a person's own work: durable structured memory, scope-aware context, knowledge navigation, and permission-controlled tools that only reach outside the system when the user explicitly authorizes it.</p>
+      <div class="hero-actions">
+        <a class="btn btn-secondary" href="/privacy/">Privacy Policy</a>
+        <a class="btn btn-secondary" href="/terms/">Terms of Service</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container doc">
+      <h2>What Agentic Command is</h2>
+      <p>Agentic Command is a desktop application built around a local "Cognitive Core" — a structured memory and reasoning support system that runs on the user's own machine. Instead of storing notes as loose text, it organizes work into durable records: tasks, decisions, learnings, procedures, and artifacts, each tied to an explicit scope (a project, a client, or a workspace) so information never bleeds across contexts it doesn't belong to.</p>
+      <p>On top of that memory layer sits a set of agent-facing capabilities that let the system retrieve the right context, navigate curated knowledge, understand relationships between pieces of work, and — only when the user allows it — take bounded, permission-gated actions using external tools and services.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Core architectural concepts</h2>
+      <div class="panel-grid">
+        <div class="panel">
+          <h3>Cognitive Core</h3>
+          <p>A local, SQLite-backed service that stores operational memory and provenance. It runs entirely on the user's machine and is optional to the base application.</p>
+        </div>
+        <div class="panel">
+          <h3>Durable memory</h3>
+          <p>Tasks, decisions, learnings, procedures, and artifacts are recorded with timestamps and provenance, rather than existing only as transient conversation history.</p>
+        </div>
+        <div class="panel">
+          <h3>Scoped context</h3>
+          <p>Every record belongs to an explicit scope. Reads default to that exact scope, so information for one project or client is never silently mixed with another.</p>
+        </div>
+        <div class="panel">
+          <h3>Knowledge navigation</h3>
+          <p>A curated, link-based map over durable notes lets the system find relevant material by following authored relationships, not by guessing.</p>
+        </div>
+        <div class="panel">
+          <h3>Relationship intelligence</h3>
+          <p>A derived, rebuildable graph of relationships between code, documentation, and notes — used only as a supplementary lookup, never as a second source of truth.</p>
+        </div>
+        <div class="panel">
+          <h3>Agents</h3>
+          <p>Role-based views over the same underlying memory, each seeing only what its role and scope permit.</p>
+        </div>
+        <div class="panel">
+          <h3>Skills</h3>
+          <p>Versioned, inspectable definitions of a repeatable job. Published versions are immutable, so behavior can't silently change after the fact.</p>
+        </div>
+        <div class="panel">
+          <h3>Capability composition</h3>
+          <p>Higher-level capabilities are built by combining existing skills, not by duplicating logic.</p>
+        </div>
+        <div class="panel">
+          <h3>Permission-controlled tools &amp; connectors</h3>
+          <p>Any action that reaches outside the Cognitive Core goes through an explicit permission ladder, with higher-impact actions requiring a specific, time-bounded approval.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container doc">
+      <h2>Optional external service integrations</h2>
+      <p>Agentic Command's core functionality does not require connecting any external account. A user may optionally authorize specific external services — such as Google services described below — to extend what the application can do on their behalf. Nothing external is contacted until the user explicitly connects and authorizes it.</p>
+
+      <div class="callout">
+        <p><strong>Authentication note:</strong> Any Google connection uses Google's own OAuth authorization screen. Agentic Command never asks for, sees, or stores a Google account password.</p>
+      </div>
+
+      <h3>Gmail (optional, user-authorized)</h3>
+      <p>When a user explicitly connects Gmail, Agentic Command can, within that authorization:</p>
+      <ul>
+        <li>Retrieve a bounded set of messages relevant to a specific, user-requested task</li>
+        <li>Search messages, and read threads and labels</li>
+        <li>Prepare draft messages</li>
+        <li>Send a message only after the user has explicitly approved that specific send</li>
+      </ul>
+
+      <h3>Google Calendar (optional, user-authorized)</h3>
+      <p>When a user explicitly connects Google Calendar, Agentic Command can, within that authorization:</p>
+      <ul>
+        <li>Retrieve event details relevant to a requested time range</li>
+        <li>Check free/busy availability</li>
+        <li>Prepare a proposed event</li>
+        <li>Create or update a calendar event only after the user has explicitly approved that specific action</li>
+      </ul>
+
+      <h3>Approved files and documents</h3>
+      <p>Document access is restricted to specific local folders the user has explicitly approved in advance. Agentic Command does not have general, unrestricted access to the filesystem.</p>
+
+      <p>No Google account is connected by default. These capabilities describe what becomes available only after a user completes Google's own authorization flow and grants the corresponding permission.</p>
+
+      <div class="link-row">
+        <a href="/privacy/">Read the full Privacy Policy →</a>
+        <a href="/terms/">Read the Terms of Service →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/agentic-command/">Agentic Command</a></li>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Official Channels</h4>
+        <ul>
+          <li><a href="https://github.com/ALIENDISTRICT51">GitHub</a></li>
+          <li><a href="https://www.youtube.com/@ALIENDISTRICT51_OFFICIAL">YouTube</a></li>
+          <li><a href="https://www.tiktok.com/@aliendistrict51_official">TikTok</a></li>
+          <li><a href="https://www.facebook.com/ALIENDISTRICT51OFFICIAL">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/devinlewis-aliendistrict51official">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ALIENDISTRICT51.</span>
+      <span>AD51 · aliendistrict51.space</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

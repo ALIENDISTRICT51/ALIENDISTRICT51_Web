@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — ALIENDISTRICT51 Agentic Command</title>
+<meta name="description" content="Privacy Policy for ALIENDISTRICT51 Agentic Command, including how Google user data accessed via Gmail and Google Calendar is used, stored, and protected.">
+<link rel="canonical" href="https://aliendistrict51.space/privacy/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy Policy — ALIENDISTRICT51 Agentic Command">
+<meta property="og:description" content="How ALIENDISTRICT51 Agentic Command handles Google user data and other information.">
+<meta property="og:url" content="https://aliendistrict51.space/privacy/">
+<meta name="theme-color" content="#0a0b0e">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">
+      <span class="mark">AD51</span>
+      <span class="full">ALIENDISTRICT51</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">☰</label>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/agentic-command/">Agentic Command</a>
+      <a href="/privacy/" aria-current="page">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom: 1rem;">
+    <div class="container doc">
+      <span class="eyebrow">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p class="meta-line">Effective date: September 6, 2026 · Applies to ALIENDISTRICT51 Agentic Command and this website (aliendistrict51.space)</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 0;">
+    <div class="container doc">
+
+      <h2>1. Overview</h2>
+      <p>This Privacy Policy explains how ALIENDISTRICT51 ("AD51," "we," "us") handles information in connection with ALIENDISTRICT51 Agentic Command ("Agentic Command") and this website. Agentic Command is a local-first desktop application: its core functionality runs on the user's own machine, and it does not require creating an account with us.</p>
+      <p>This policy is written to specifically address Agentic Command, including its optional use of Google APIs, rather than to serve as a generic template.</p>
+
+      <h2>2. Information this website handles</h2>
+      <p>This website (aliendistrict51.space) is a static informational site. It does not use advertising trackers, does not run analytics, does not offer account registration, and does not include contact forms.</p>
+      <p>We do not control the infrastructure that serves this website. GitHub Pages, or any other hosting or content-delivery provider we use, may process standard technical request information (such as IP address, request timestamps, and user-agent strings) as part of ordinary web server operation, under that provider's own privacy policy. We do not claim that infrastructure providers never generate such logs.</p>
+
+      <h2>3. Google account authorization</h2>
+      <p>Agentic Command can optionally connect to a user's Google account using Google's own OAuth 2.0 authorization system. A connection is only established after the user affirmatively initiates it and completes Google's consent screen. Agentic Command never asks for or handles the user's Google account password directly.</p>
+
+      <h2>4. Google data Agentic Command may access</h2>
+      <p>Depending on which optional integrations a user authorizes, Agentic Command may request:</p>
+      <p><strong>Identity</strong></p>
+      <ul>
+        <li>OpenID identity information</li>
+        <li>The connected Google account's email address, used to verify the authorization is bound to the exact expected account</li>
+      </ul>
+      <p><strong>Gmail, when authorized</strong></p>
+      <ul>
+        <li>Message metadata and content needed to fulfill a user-requested read</li>
+        <li>Search results, threads, and labels</li>
+        <li>Draft messages the user asks Agentic Command to prepare</li>
+        <li>Sending a message, only when the user has explicitly approved that specific send</li>
+      </ul>
+      <p><strong>Google Calendar, when authorized</strong></p>
+      <ul>
+        <li>Calendar event information relevant to a user request</li>
+        <li>Free/busy availability</li>
+        <li>Creating or updating an event, only when the user has explicitly approved that specific action</li>
+      </ul>
+      <p>Agentic Command does not access Google Drive, YouTube, Google Contacts, Google Photos, or other Google services not listed above.</p>
+
+      <h2>5. How Google data is used</h2>
+      <p>Google data is used only to carry out the specific, user-directed functionality of Agentic Command. For example: answering an explicit request about the user's inbox, preparing a requested draft, sending an email the user has explicitly approved, retrieving a requested schedule, checking availability, or preparing and, once approved, executing a calendar action.</p>
+      <p>Google data is not used to build advertising profiles, and is not used for any purpose unrelated to the specific workflow the user requested.</p>
+
+      <h2>6. Data minimization</h2>
+      <p>Agentic Command is designed to request and retain only the information needed for the workflow the user asked it to perform. This is a design goal rather than a claim that every piece of data is transient — some non-content operational records are retained as described in Section 8, so that the user has an accurate record of what the application did.</p>
+
+      <h2>7. Local credential security</h2>
+      <p>Reusable Google OAuth credentials (such as refresh tokens) are protected locally using Windows DPAPI (Data Protection API) tied to the current Windows user account. These reusable secrets are not stored as plaintext records inside the Cognitive Core database. A short-lived access token may exist transiently in memory only while an authorized operation is being performed. Durable tool and connector records reference credentials indirectly (an opaque credential reference), never by storing the plaintext secret itself.</p>
+
+      <h2>8. Durable operational records</h2>
+      <p>To give the user an accurate account of what Agentic Command has done, the application may locally retain non-secret operational evidence, such as: provider identifiers, the type of operation performed, timestamps, status, provenance, and approval information associated with an action.</p>
+      <p>Sensitive Gmail message bodies and Calendar write payloads are designed to be redacted or minimized before they are written into this durable operational evidence, rather than stored there in full.</p>
+
+      <h2>9. Sharing and sale</h2>
+      <p>We do not sell Google user data. We do not use Google user data for advertising. We do not share Google user data with unrelated third parties for advertising or marketing purposes. Google APIs are called only as needed to perform the specific functionality the user requested. We do not use any third-party data processors beyond the Google APIs and infrastructure described in this policy.</p>
+
+      <h2>10. Human access</h2>
+      <p>Agentic Command's current architecture is local-first: there is no routine server-side ingestion of a user's mailbox or calendar by ALIENDISTRICT51. We do not claim that no human could ever access data under any circumstance — for example, the user themself has direct access to their own local application data — but there is no ordinary operational path by which ALIENDISTRICT51 personnel view a user's Google data.</p>
+
+      <h2>11. Google API Services User Data Policy</h2>
+      <p>Agentic Command's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements. We do not represent that Agentic Command has undergone Google's verification or certification process unless and until that process is actually completed.</p>
+
+      <h2>12. User control</h2>
+      <p>Users control every optional integration and may disconnect Gmail or Google Calendar within Agentic Command at any time. Google account authorization can also be revoked directly through the user's own Google Account permissions and security settings, independent of the application.</p>
+
+      <h2>13. Data deletion</h2>
+      <p>Disconnecting or revoking an integration removes Agentic Command's stored access credentials for that service and prevents any future access to that provider on the user's behalf. Disconnecting an integration does not automatically erase historical, non-secret operational records (see Section 8) that were already created before disconnection; those remain part of the user's own local operational history unless the user separately removes them.</p>
+
+      <h2>14. Security</h2>
+      <p>Agentic Command applies local secure credential protection, explicit user permissions, approval gates for consequential external actions, scoped connector bindings limited to specific authorized capabilities, and redaction or minimization of sensitive content in durable records. No system can be described as completely secure, and we do not claim Agentic Command is "100% secure," "unhackable," or "military-grade."</p>
+
+      <h2>15. Changes to this policy</h2>
+      <p>We may update this Privacy Policy as Agentic Command's functionality evolves. Material changes will be reflected by updating the effective date at the top of this page.</p>
+
+      <h2>16. Contact</h2>
+      <p>For questions about this Privacy Policy, please reach out through ALIENDISTRICT51's official public channels or open an issue on <a href="https://github.com/ALIENDISTRICT51">GitHub</a>.</p>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/agentic-command/">Agentic Command</a></li>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Official Channels</h4>
+        <ul>
+          <li><a href="https://github.com/ALIENDISTRICT51">GitHub</a></li>
+          <li><a href="https://www.youtube.com/@ALIENDISTRICT51_OFFICIAL">YouTube</a></li>
+          <li><a href="https://www.tiktok.com/@aliendistrict51_official">TikTok</a></li>
+          <li><a href="https://www.facebook.com/ALIENDISTRICT51OFFICIAL">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/devinlewis-aliendistrict51official">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ALIENDISTRICT51.</span>
+      <span>AD51 · aliendistrict51.space</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
