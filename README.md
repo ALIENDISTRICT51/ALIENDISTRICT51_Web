@@ -9,12 +9,15 @@ repository root with a static HTTP server to preview the root-relative links.
 The homepage adds project cards and an AD51 ecosystem diagram. Detail pages:
 
 - `/projects/nexus/` — workflows, capture, telemetry, and structured data.
+
+  <img width="1516" height="896" alt="Screenshot 2026-08-14 224047" src="https://github.com/user-attachments/assets/8ec7ff15-f3aa-44e4-8005-a947c9ee3516" />
+
 - `/projects/brain-vault/` — persistent memory, knowledge, and continuity.
-- 
+  
 <img width="2552" height="1185" alt="Screenshot 2026-10-06 220958" src="https://github.com/user-attachments/assets/c9b9c0ce-4f32-48e0-9b81-e87a16e0ea58" />
 
 - `/projects/mothership/` — visual Agentic AI OS, NOVA, agents, and runtime.
-- 
+  
 <img width="1908" height="917" alt="Screenshot 2026-10-06 205151" src="https://github.com/user-attachments/assets/a6357ab1-33b9-47a9-b23b-af0fafaa8c06" />
 <img width="787" height="764" alt="7395919f-b74d-41a1-be34-6eebc970bab4" src="https://github.com/user-attachments/assets/e2360d92-2dcb-4f29-ad70-0d601534676a" />
 
