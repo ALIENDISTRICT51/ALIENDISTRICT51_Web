@@ -42,6 +42,8 @@ All assets are local to `assets/media/`; no external media services are needed.
 | `nova-character-studies.png` | image-1790295405920.png | Expandable character studies on Mothership detail |
 | `brain-vault-poster.jpg` | Frame at 00:10 of Brain_Vault_Project.mp4 | Brain Vault card and video poster |
 | `brain-vault-demo.mp4` | Brain_Vault_Project.mp4 | Brain Vault detail video |
+| `mothership-preview.mp4` | Agentic Operating System Mothership.mp4 | Mothership detail cinematic preview |
+| `mothership-poster.jpg` | Agentic Operating System Mothership-Cover.jpg | Mothership video poster |
 
 The four supplied PNGs are preserved. Cropping uses presentation styles, and
 full-size originals can be opened from the detail pages. Character media is
@@ -52,6 +54,15 @@ pixel format and fast-start metadata, reducing the original 104 MB file to
 approximately 21 MB. It has native controls, inline mobile playback, a poster,
 and `preload="none"`; it does not autoplay. A text description accompanies it.
 No placeholder media is used.
+
+The 40-second Mothership cinematic preview preserves the source's 3840 × 2160
+resolution, 60 fps, and AAC stereo audio. FFmpeg converts AV1 to H.264 (CRF 20,
+slow preset, yuv420p, fast-start metadata), reducing 381,558,380 bytes to
+55,171,938 bytes. The original source is unchanged. The supplied cover image
+is used unchanged as the poster. Native controls, inline playback, a text
+description, and `preload="none"` reuse the existing media component; there is
+no autoplay, additional JavaScript, or external player. The preview sits below
+the existing Mothership screenshot and depicts visual direction.
 
 Project grids stack on small screens, workflow diagrams switch to vertical
 steps, and the ecosystem diagram becomes a connected stack. Interaction uses
@@ -69,3 +80,8 @@ the validation server. Desktop and mobile screenshots were visually reviewed.
 
 HTML structure, asset paths, duplicate IDs, and `git diff --check` passed.
 There are no configured build, lint, or test commands in this static repository.
+
+The Mothership video addition was checked across the same seven routes and four
+viewport widths. Both project videos passed play, pause, seek, volume, and
+fullscreen checks in Chrome, with no console, page, or asset errors. The new
+video is not fetched before playback, and the MP4 passes a full FFmpeg decode.
